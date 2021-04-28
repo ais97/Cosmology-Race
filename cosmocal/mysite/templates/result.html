@@ -1,0 +1,296 @@
+<html>
+	<head>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Asar">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Original+Surfer">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+    .footer {
+      background-color: #0BBFFF;
+      text-align: center;
+      padding: 10px;
+    }
+	.row {
+	  margin-left: 50px;
+	  margin-right: 50px;
+	}
+    .button{
+	    background-color: #0BBFFF;
+	    color: black;
+	    text-align: center;
+	    padding: 5px 10px;
+	    border-radius: 3px;
+	}
+	.column {
+	  float: center;
+	  width: 50%;
+	  padding: 50px;
+	}
+
+
+
+	.header {
+	  background-color: #0BBFFF;
+	  text-align: center;
+	  padding: 10px;
+	}
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	/* Style the topnav links */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #0BBFFF;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	/* Change color on hover */
+	.topnav a:hover {
+	  background-color: #0BBFFF;
+	  color: black;
+	  cursor: pointer;
+	}
+/* Create three unequal columns that floats next to each other */
+	.column {
+	  float: left;
+	  padding: 10px;
+	}
+
+	/* Left and right column */
+	.column.side {
+	  width: 30%;
+	  text-align:center;
+	  font-size:20px;
+	  padding-left:0%;
+	  background-color:#333;
+	  color:#0BBFFF;
+	}
+
+	/* Middle column */
+	.column.middle {
+	  width: 70%;
+	  text-align: justify;
+	  color:white;
+	}
+
+	.column.center {
+	  width: 100%;
+	  text-align: justify;
+	  padding-left:20%;
+	  padding-right:20%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 1000px) {
+	  .column.side, .column.middle, .column.center {
+	    width: 100%;
+        padding:2%;
+        font-size:30;
+	  }
+	}
+	body {
+	 font-family: 'Asar', serif;
+	 font-size: 25px;
+	 background-image: url('/static/twinkle.gif');
+	 background-repeat: repeat;
+	 }
+	 .button {
+	  background-color: #0BBFFF;
+	  border: none;
+	  color: black;
+	  padding: 10px 15px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 25px;
+	  cursor: pointer;
+	  font-family:'Original Surfer',serif;
+	 }
+    .button:hover {
+      background-color: #333;
+      box-shadow: 0 12px 16px 0 rgba(0.5,0.5,0.5,0.5), 0 17px 50px 0 rgba(0.5,0.5,0.5,0.5);
+      color: #0BBFFF;
+    }
+    #customers {
+      font-family: Asar;
+      border-collapse: collapse;
+      width: 100%;
+      font-size:25px;
+      color:white;
+    }
+
+    #customers td, #customers th {
+      border: 1px solid #000;
+      padding: 8px;
+    }
+
+    #customers tr:nth-child(even){background-color: none;}
+
+    #customers tr:hover {background-color: none}
+
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #0BBFFF;
+      color: black;
+    }
+	.footer {
+      padding: 20px;
+      text-align: justify;
+      background: #333;
+      color:#0BBFFF;
+      margin-top: 20px;
+    }
+    input[type=text], select {
+      width: 50%;
+      padding: 0px 0px;
+      margin: 4px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size:18px;
+      font-family:"Original Surfer";
+    }
+	</style>
+
+	</head>
+	<body>
+	<div>
+	<div class="header">
+	  <h1 style="font-family:'Original Surfer'">Cosmology Calculator</h1>
+	</div>
+	</div>
+	<div>
+	<center><blockquote>
+	  <p style="color:white;"><i>Tell me the present, I'll tell you the past...</i></p>
+	</blockquote></center>
+	</div>
+	<div>
+	<div class="topnav">
+	  <a href="{{url_for('theory')}}" style="font-family:'Original Surfer'">Cosmology Race - The Story</a>
+	</div>
+	</div>
+	<div class="column side">
+	<center><h2 style="color:white;">Enter the Parameters:</h2></center>
+
+  <form method="post" action="./result">
+    <center><p>Hubble Parameter, H<sub>0</sub>, in km/s/Mpc </p></center>
+    <center><p><input type="text" name="H0" value={{H0}} /></p></center>
+    <center><p>Matter Density Parameter, &Omega;<sub>m,0</sub></p></center>
+    <center><p><input type="text" name="omega_m0" value={{omega_m0}} /></p></center>
+    <center><p>Radiation Density Parameter, &Omega;<sub>&gamma;,0</sub></p></center>
+    <center><p><input type="text" name="omega_rad0" value={{omega_rad0}} /></p></center>
+    <center><p>Dark Energy Density Parameter, &Omega;<sub>&Lambda;,0</sub></p></center>
+    <center><p><input type="text" name="omega_lam0" value={{omega_lam0}} /></p></center>
+    <center><p>Curvature Parameter, &Omega;<sub>k,0</sub></p></center>
+	<center><p><input type="text" name="omega_k0" value={{omega_k0}} /></p></center>
+    <center><p>Redshift, z</p></center>
+	<center><p><input type="text" name="z" value={{z}} /></p></center>
+	    <center> <button class="button", type="submit" >Calculate</button></center>
+
+	    {{errors}}
+    </form>
+    </div>
+	<div class="column middle"><center>
+  <h3 style="color:white;">Information Required for Intergalactic Travel to Your Redshift:</h3>
+
+
+     <table id="customers">
+        <tr>
+        <th>Time, Distances and Scales</th>
+        <th>Values</th>
+      </tr>
+            <tr>
+    			<td>Present Age, t<sub>0</sub></td>
+    			<td>{{t0}}</td>
+  			</tr>
+            <tr>
+    			<td>Age of universe at given redshift, t<sub>z</sub></td>
+    			<td>{{t}}</td>
+  			</tr>
+            <tr>
+    			<td>Look back time, t<sub>lb</sub></td>
+    			<td>{{t_lb}}</td>
+  			</tr>
+            <tr>
+    			<td>Co-moving radial distance, r<sub>c</sub></td>
+    			<td>{{rc}}</td>
+  			</tr>
+            <tr>
+    			<td>Angular diameter distance, d<sub>A</sub></td>
+    			<td>{{dA}}</td>
+  			</tr>
+            <tr>
+    			<td>Luminosity distance, d<sub>L</sub></td>
+    			<td>{{dL}}</td>
+  			</tr>
+            <tr>
+    			<td>Angular Scale, ds/d&theta;</td>
+    			<td>{{dAs}}</td>
+  			</tr>
+            <tr>
+    			<td>Horizon Length, l<sub>H</sub></td>
+    			<td>{{Hl}}</td>
+  			</tr>
+            <tr>
+    			<td>Temperature of CMB, T<sub>z</sub></td>
+    			<td>{{T}} K</td>
+  			</tr>
+
+
+            </table>
+</div>
+<div class="column center">
+ <p style="color:white; text-align: justify;">This graph shows who's leading the race.... and when someone overtook the others. Put in different parameter values and get the results you want!!! Remember, negative values are not allowed for most parameters and will throw errors.</p>
+
+<center style="text-align:center;"><img src="/matplot-as-image-{{H0_str}}_{{omega_m0_str}}_{{omega_rad0_str}}_{{omega_lam0_str}}_{{omega_k0_str}}.png"
+         alt="random points as png"
+         width="100%"></center>
+
+</div>
+    <div class="column center"><h3 style="color:white;">Things to keep in mind:</h3>
+
+	    <li style="color:white;">You can enter all values depending on what kind of universe you envision.</li>
+	    <li style="color:white;"><b>Hubble parameter</b> stands for the <b>expansion</b> of the universe.</li>
+	    <li style="color:white;"><b>Matter, Radiation and Dark energy</b> are the known components of the Universe. <b>Curvature</b> is a property of the Universe. <b>Altogether, these parameters must add up to 1.</b> If the entered values don't follow this, then the curvature parameter is changed by the calculator.</li>
+	    <li style="color:white;">Redshift is how far back from today and now you want to see. The <b>present</b> time has a <b>redshift</b> of <b>0</b>. The Big Bang is at redshift &infin;. Same difference in redshift doesn't give same difference in time, mind you!</li>
+	    <li style="color:white;">The thing is, we can't really observe anything beyond a redshift of ~1100. So <b>if you enter a redshift >1100, proceed at your own risk.</b> The developers of this calculator are not responsible for any wrong calculations... you have been warned!!!</li>
+	    <li style="color:white;">You can put random values and make your unique universe or you can read up and put the exact values observed. More fun in creating your own universe I think!!!</li>
+	    <li style="color:white;">The default values entered for the parameters are more or less the observed values in our current universe. Redshift is given as an example.</li>
+	    <li style="color:white;">The results will have a graph that explains the components of your universe. </li>
+	    <li style="color:white;">This calculator is not perfect.&#128521; &#x1F609;</li>
+
+</div>
+<div class="column center" style="background-color:#333; color:#0BBFFF">
+  <p>This Calculator was submitted as part of a Cosmology assignment by V Aiswarya and Kiran L during the Spring Semester of 2021 at <a href="https://www.iist.ac.in/" style="color:white;">IIST, Thiruvananthapuram</a></p>
+</div>
+
+    </body>
+</html>
+

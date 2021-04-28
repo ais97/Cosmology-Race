@@ -1,0 +1,237 @@
+<html>
+<head>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Original+Surfer">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Asar">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  margin-left: 50px;
+	  margin-right: 50px;
+	}
+
+	.column {
+	  float: center;
+	  width: 50%;
+	  padding: 50px;
+	}
+
+
+
+	.header {
+	  background-color: #0BBFFF;
+	  text-align: center;
+	  padding: 10px;
+	}
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  width: 50%;
+	}
+
+	th, td {
+	  text-align: justify;
+	  padding: 25px;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	/* Style the topnav links */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #0BBFFF;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	/* Change color on hover */
+	.topnav a:hover {
+	  background-color: #0BBFFF;
+	  color: black;
+	}
+/* Create three unequal columns that floats next to each other */
+	.column {
+	  float: left;
+	  padding: 25px;
+	}
+
+	/* Left and right column */
+	.column.side {
+	  width: 30%;
+	}
+
+	/* Middle column */
+	.column.middle {
+	  width: 70%;
+	  text-align: justify;
+	}
+	.column.center {
+	  width: 100%;
+	  text-align: justify;
+	  padding-left:20%;
+	  padding-right:20%;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 1000px) {
+	  .column.side, .column.middle, .column.center {
+	    width: 100%;
+        padding: none;
+	  }
+	}
+	body {
+	 font-family: 'Asar', serif;
+	 font-size: 25px;
+	 background-image: url('/static/twinkle.gif');
+	 background-repeat: repeat;
+	}
+	.footer {
+      padding: 20px;
+      text-align: justify;
+      background: #333;
+      color:#0BBFFF;
+      margin-top: 20px;
+    }
+	</style>
+
+
+	</head>
+<body>
+	<div class="header">
+	  <h1 style="font-family:'Original Surfer',serif;">Cosmology Race</h1>
+	</div>
+	<center><blockquote>
+	  <p style="color:white;"><i>“Cosmology is an attempt to understand and explain the physical universe through laws of physics and observations”.</i></p>
+	  <footer style="color:white;">— Dr. Anand Narayananan, Associate Professor, Dept. of ESS, IIST</footer>
+	</blockquote></center>
+	<div class="topnav">
+	  <a href="/" style="font-family:'Original Surfer',serif;">Cosmology Calculator</a>
+	</div>
+
+
+
+	<div class="column middle">
+
+	<h1 style="color:white">The Story</h1>
+
+	<p style="color:white;">Hello and welcome to Aiswarya and Kiran's Cosmology Calculator. We have all come across the phrase “Big Bang”... What is it??? The Theory, not the TV series, says that the whole Universe was once a singularity… meaning, all that we see today, time, space etc, were all confined to one point.... This is really difficult to understand without some understanding of the theory of relativity, for now, let’s just go forward assuming what I say is true. Then all the matter and radiation and what-not got bored and started this game..., let's come back to this game later. Now, How do we know that the Big Bang happened?</p>
+    <h2 style="color:white;">The Big Bang</h2>
+    <p style="color:white;">There are observations that lead us to conclude that there was a Big Bang. The first is that we live in an expanding Universe. Edwin Hubble and Milton Humanson observed in the 1920s that there were extended objects, such as galaxies, in the sky that were moving at very high velocities. These velocities cannot be due to the motion of objects with such large masses. Instead, it was theorized that the Universe itself was expanding!!...</p>
+    <h2 style="color:white;">Redshift</h2>
+
+    <p style="color:white;"> <img src="/static/redshift.png"ALIGN="left" width="40%"> Here, we talk about only cosmological redshift. From the light we receive from all objects, it is possible to tell if they are moving away or toward us, the observers. We have the experience of trains moving toward and away from us. The sound increases in frequency when the train moves toward us and the opposite is also true… In the same way, wavelength, which goes as one over frequency, of light increases as objects move away... the trains is analogous to photons here. This is how Hubble and Humanson observed that all far away galaxies are moving away from us.</p>
+    <p style="color:white;"><i>An aside: Don’t conclude that we are at the center of the Universe! The many times someone said we were at the center of something…. All of them were wrong.</i></p>
+    <p style="color:white;">In 1965, A A Penzias and R W Wilson measured a constant microwave source, the Cosmic Microwave Background, CMB, which was identical in all parts of the sky. Dicke, Peebles, Roll and Wilkinson had theorized that the Big Bang would have a signature in the present Universe in the form of constant electromagnetic waves observed uniformly across the sky. This was the second observation that led us to believe that there was a Big Bang…..
+    So… What happened after the Big Bang? Let’s see…</p>
+    <h2 style="color:white;">Inflation</h2>
+    <p style="color:white;">For a fraction of a second after the BB, the Universe expanded exponentially fast. One moment it was a singularity and the next it was a Universe &#91;Confusing for all those involved, I know...&#93;. This exponential expansion is known as inflation.</p>
+    <h2 style="color:white;">Homogeneity and isotropy</h2>
+    <p style="color:white;">Cosmology assumes that the Universe is homogeneous and isotropic so there is no center of the Universe, nor are we in any special location. Homogeneity means that the universe looks the same at each point, while isotropy means that the universe looks the same in all directions. One can comprehend this by recalling the concept of birefringence where we observe that the refractive index of the crystal depends on the orientation of the crystal with the ray of light.</p>
+    <p style="color:white;">The concept of homogeneity and isotropy can be easily understood by considering oneself to be on a planet composed of only water, for example, Uranus. No matter in which direction we see, we only see the same view, water and water everywhere, and no matter at which position on the surface of the planet we are in, it looks the same.</p>
+
+    <h2 style="color:white">The Components of the Universe</h2>
+    <p style="color:white;">This is where things get tricky. The universe has various components: some are what we call the known unknowns…</p>
+    <ol>
+        <li style="color:white;"><b>Matter:</b> This consists of the baryonic and dark matter. Matter makes up roughly 30% of today’s Universe.</li>
+        <li style="color:white;"><b>Radiation:</b> This is all the Electromagnetic radiation in the Universe, mostly CMB. You might ask, what about the contribution from stars and galaxies... very little of the light we see is due to the stars. It is almost negligible when compared to other components of the Universe. It is estimated at around 0.0084%. </li>
+        <img src="/static/starsvscmb.png" width="100%" >
+        <li style="color:white;"><b>Dark Energy:</b> The serendipitous discovery of dark energy was made by Adam Reiss and his colleagues in 1998. This is a known unknown which means that we know how much it is but don't exactly know what it is. It makes up about 70% of the Universe.</li>
+
+        <li style="color:white;"><b>Curvature:</b> Curvature defines the geometry of the Universe. Imagine a surface of a 3 dimensional object. We are allowed to only move along the surface. The inner parts and the space outside is forbidden to us. Then, when we draw shapes on these surfaces, we have to account for the curvature of the object. In the same way, for space-time, which is 4-D, we have to account for this. Even though curvature is a quality of the Universe itself, we can group it into a density parameter to make the equations look more sleek. There are 3 classes of curvature.
+        <ol>
+            <li style="color:white;"><b>Flat:</b> In a flat Universe, there is just enough matter that the expansion will eventually stop, but after infinite amount of time, the parameter = 0 in this case)</li>
+            <li style="color:white;"><b> Open, Negative Curvature:</b> In an open Universe, there is not enough matter/energy to stop the expansion and the Universe expands forever.</li>
+           <img src="/static/curvature.png" width="90%" >
+            <li style="color:white;"><b>Closed, Positive Curvature:</b> In a closed Universe, there is more matter/ energy, so that the Universe expands for a time and then starts contracting.</li>
+        </ol>
+
+        From all the observations that have been made, <b>Cosmologists</b> have come to the conclusion that we live in a flat universe. Density parameters are a way to know if the Universe will expand forever, or stop expanding  and start contracting… We are still unsure if there will be a Big Crunch where the Universe returns to being a singularity or if it will slow down the expansion and just stop expanding in the distant future or if it will speed up the acceleration even further.
+
+        </li>
+    </ol>
+
+    <img src="/static/expansion.jpeg" width="100%" >
+    <h2 style="color:white;">Recombination Era and the Decoupling of Matter and Radiation</h2>
+    <p style="color:white;">Getting back to our game, all these components had a race.The Universe just keeps expanding all the time, don't forget. At the beginning, just after inflation, the Universe was a cosmic soup of matter and radiation and both were interacting frequently with each other and there was thermal equilibrium between them. We don’t consider dark energy here since we don't know exactly what it was doing at the time</p>
+    <p style="color:white;">Matter consisted of dark matter, we only know that it is gravitational, and the atoms that we know about. The atoms were not atoms… rather, there were only protons and electrons and very light nuclei like deuterium, Helium and Lithium. Radiation dominated in this phase. There was more radiation than matter per unit volume.</p>
+    <p style="color:white;">Then the Universe expanded enough so that the protons and electrons started combining to form hydrogen atoms due to the universal temperature reduction because of the expansion. In the middle of all this, somewhere, radiation got behind in the race and matter started to dominate, at around 50000 years after the BB. As temperatures dropped further, with the Universe expanding, the protons and electrons combined more and more. This is known as the era of recombination, which occured at around 380000 years after the BB.</p>
+    <p style="color:white;">Matter was changing and radiation did not like it. As matter was dominating, radiation got angry with matter and said “This is not fair!” and started free streaming and stopped completing matter’s sentences. What we see as the Cosmic Microwave Background or CMB is the story told by radiation about the time they had the disagreement. Such a long friendship they had, matter and radiation... This story tells us how the Universe was during the era of recombination.</p>
+    <h2 style="color:white;">The Dark Ages</h2>
+    <p style="color:white;">Matter and radiation were not in talking terms, they were decoupled. Now the hydrogen which formed during the recombination era was pulled into pockets of dark matter, galaxy forming regions, and created a fog so light couldn’t escape. These were the dark ages. Inside the fog of neutral hydrogen, stars started forming….  and then there was light again as the hydrogen fog cleared.</p>
+    <img src="/static/std.jpg" width="80%" >
+    <p style="color:white;">Life was constant for a while in terms of routine for matter, creating stars, galaxies and radiation and the expansion, as always.</p>
+    <p style="color:white;">For a long time, matter dominated the Universe in terms of density….</p>
+    <h2 style="color:white;">Enter Dark Energy</h2>
+    <p style="color:white;">All this while, there was this component of the Universe which was silent, but now it had had enough of being silent…. As the Universe expanded, even matter started to lose its hold as the dominant component… Dark Energy saw this as a good time to take over. When dark energy started dominating, the expansion of the Universe accelerated…. What happens next is in the future…. Let’s live as long as the universe and find out???</p>
+
+    <p style="color:white;">We are currently living in a Universe where the matter that makes up the atoms that we are made of are a minority among the total matter, which is again a minority among other components of the Universe….</p>
+    <p style="color:white;">Okay, so this is the story of the Universe that we live in. Using this calculator, you can create your own universe and make your own races…. It shows the age of your Universe along with some useful information, if you are planning an Intergalactic trip, and also the history of which component was and is dominating….</p>
+    <p style="color:white;">Below is some basic information for intergalactic travel:</p>
+    <h2 style="color:white;">Distances in cosmology</h2>
+    <p style="color:white;">There are 4 different types of distance in Cosmology.</p>
+    <ol>
+        <li style="color:white;"><b>Proper distance</b> This is the actual distance between two objects, or events in space-time in General Relativity. Also the distance light travelled from location A to B in its rest frame.</li>
+        <li style="color:white;"><b>Comoving distance</b> This is the distance which expands with the expansion of the Universe. The distance between 2 objects in space remains the same even when the Universe expands because the scale with which we measure is also expanding.</li>
+        <li style="color:white;"><b>Angular diameter distance</b> This is a good approximation of proper distance from observations. Here, if we know the physical size of an object and the angle it subtends at the observer, we calculate a distance to the object. For an expanding Universe, the angular diameter distance increases as redshift increases, but then decreases as the size of the Universe is smaller at higher redshifts.</li>
+        <li style="color:white;"><b>Luminosity distance</b> Distances measured using standard candles such as type Ia supernovae, by taking their distance modulus, are categorized as luminosity distance.</li>
+    </ol>
+
+    <p style="color:white;"><b>Angular scale</b> is the distance between points in the sky at a given redshift which subtend an angle of 1” or 1/3600<sup>o</sup>.</p>
+    <p style="color:white;"><b>Horizon length</b> is the distance upto which we can see given a redshift. In other words, it is the distance that light could have travelled in the time since the Big Bang to the given redshift.</p>
+    <p style="color:white;">Now you're all set! <a href="/", style="color:white;">Go and create your own Universe!!!</a></p>
+
+    </div>
+
+  <div class= "column side">
+  <h2 style="color:white">Cosmology Memes</h2>
+
+  <p>    <img src="/static/ias_meme.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/rohith_meme.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/hostel.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/energy.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/haha.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/prac.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/rus.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/tom.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/pres.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/einstein.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/cartoon.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/cosmo.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/kbc.png" width="100%" >   </p>
+  <p>    <img src="/static/peter_parker_meme.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/multiverse.jpeg" width="100%" >   </p>
+  <p>    <img src="/static/different_distances_meme.jpeg" width="100%" >   </p>
+  </div>
+
+
+
+<div>
+<div class="column center" style="background-color:#333; color:#0BBFFF">
+  <p>This Calculator was submitted as part of a Cosmology assignment by V Aiswarya and Kiran L during the Spring Semester of 2021 at <a href="https://www.iist.ac.in/" style="color:white;">IIST, Thiruvananthapuram</a></p>
+</div>
+</div>
+
+</body>
+</html>
+
